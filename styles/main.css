@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto 0.6rem;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  background: #141414;
+  height: 2.5rem;
+
+  padding: 0.5rem;
+}
+
+header .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  color: #e50914;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav {
+  gap: 0.9rem;
+}
+
+nav a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #c9c5c5;
+}
+
+nav a:hover {
+  color: #ffff;
+}
