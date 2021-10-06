@@ -1,31 +1,45 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+  --header-color: #0a0a0a;
+  --navation-color: #aaa;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background: var(--preto);
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+}
+
 .container {
   margin: auto 0.6rem;
 }
 
-.flex {
+.flex-container {
   display: flex;
 }
 
 header {
-  background: #141414;
+  background: var(--header-color);
   height: 2.5rem;
 
-  padding: 0.5rem;
+  padding: 0.9rem;
 }
 
-header .flex {
+header .flex-container {
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 #logo {
-  color: #e50914;
+  color: var(--vermelho);
 
   font-weight: 700;
   text-transform: uppercase;
@@ -35,12 +49,40 @@ nav {
   gap: 0.9rem;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   text-transform: capitalize;
-  color: #c9c5c5;
+
+  color: var(--navation-color);
 }
 
 nav a:hover {
   color: #ffff;
 }
+
+/* FILMES */
+.filme-principal {
+  
+  background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
+  url('../img/sex-education.jpg');
+
+  background-size: cover;
+  height: 400px;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+
+.titulo {
+font-size: 3.5rem;
+}
+
+.description {
+  margin-bottom: 4rem;
+}
+
+
